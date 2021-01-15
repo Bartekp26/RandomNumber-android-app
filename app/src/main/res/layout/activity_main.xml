@@ -7,12 +7,97 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textViewRangeOfNumbers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="Select range of numbers:"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    // Minimum range
+
+    <TextView
+        android:id="@+id/textViewMinNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRangeOfNumbers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewMaxNumber" />
+
+    <EditText
+        android:id="@+id/minNumberToGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="4"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMinNumber"
+        app:layout_constraintStart_toStartOf="@+id/textViewMinNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMinNumber" />
+
+    // Maximum range
+
+    <TextView
+        android:id="@+id/textViewMaxNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="To:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewRangeOfNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRangeOfNumbers" />
+
+    <EditText
+        android:id="@+id/maxNumberToGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="4"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMaxNumber"
+        app:layout_constraintStart_toStartOf="@+id/textViewMaxNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaxNumber" />
+
+    // Button to generate number
+
+    <Button
+        android:id="@+id/btnGenerateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/alegreya_sans_medium"
+        android:text=" Generate number"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        app:cornerRadius="20dp"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    // Text view with generated number
+    <TextView
+        android:id="@+id/generatedNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textSize="56sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGenerateNumber" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="250dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
