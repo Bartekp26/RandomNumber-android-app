@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Random Number</string>
+
+    // Errors
+    <string name="error">Something went wrong</string>
+    <string name="errorNumberIsTooSmallOrLarge">Numbers must be between -2,147,483,648 and 2,147,483,647</string>
+    <string name="errorMinNumberGreaterThanMaxNumber">Minimum number can\'t be greater than maximum number</string>
+    <string name="errorMinNumberEqualToMaxNumber">Minimum number can\'t be equal to maximum number</string>
 </resources>

@@ -19,7 +19,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     // Minimum range
-
     <TextView
         android:id="@+id/textViewMinNumber"
         android:layout_width="wrap_content"
@@ -41,7 +40,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewMinNumber" />
 
     // Maximum range
-
     <TextView
         android:id="@+id/textViewMaxNumber"
         android:layout_width="wrap_content"
@@ -64,7 +62,6 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewMaxNumber" />
 
     // Button to generate number
-
     <Button
         android:id="@+id/btnGenerateNumber"
         android:layout_width="wrap_content"
@@ -92,6 +89,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGenerateNumber" />
+
+    // Error
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="@color/error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGenerateNumber" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
