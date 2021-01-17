@@ -1,4 +1,4 @@
-package com.example.randomnumber
+package com.example.randomStuffGenerator
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

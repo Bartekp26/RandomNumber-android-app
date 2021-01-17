@@ -1,4 +1,4 @@
-package com.example.randomnumber
+package com.example.randomStuffGenerator
 
 import org.junit.Test
 

@@ -1,9 +1,7 @@
-package com.example.randomnumber
+package com.example.randomStuffGenerator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextUtils.isEmpty
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
