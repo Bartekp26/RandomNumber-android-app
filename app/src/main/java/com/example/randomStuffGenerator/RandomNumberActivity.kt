@@ -10,6 +10,8 @@ class RandomNumberActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_random_number)
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
         // Generate Number
         btnGenerateNumber.setOnClickListener{
             error.text = ""
