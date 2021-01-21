@@ -25,17 +25,17 @@ class MainActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        when(item.itemId){
+    override fun onOptionsItemSelected(item: MenuItem) = when(item.itemId){
             R.id.menuAbout -> {
                 // TODO: add functionality to about item in menu
+                true
             }
             R.id.menuExit -> {
-                // TODO: add functionality to exit item in menu
+                moveTaskToBack(true)
+                exitProcess(-1)
+            }
+            else -> {
+                super.onOptionsItemSelected(item)
             }
         }
-
-        return super.onOptionsItemSelected(item)
-    }
 }

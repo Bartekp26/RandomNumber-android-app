@@ -13,7 +13,7 @@ class RandomNumberActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         // Generate Number
-        btnGenerateNumber.setOnClickListener{
+        btnGenerateNumber.setOnClickListener {
             error.text = ""
 
             val minNumber = when {
@@ -25,7 +25,8 @@ class RandomNumberActivity : AppCompatActivity() {
                     return@setOnClickListener
                 }
                 else -> {
-                    minNumberToGenerate.text.toString().toInt() }
+                    minNumberToGenerate.text.toString().toInt()
+                }
             }
 
             val maxNumber = when {
@@ -37,9 +38,9 @@ class RandomNumberActivity : AppCompatActivity() {
                     return@setOnClickListener
                 }
                 else -> {
-                    maxNumberToGenerate.text.toString().toInt() }
+                    maxNumberToGenerate.text.toString().toInt()
+                }
             }
-
 
             // Error checker
             when {
@@ -57,6 +58,10 @@ class RandomNumberActivity : AppCompatActivity() {
                 }
             }
         }
+    }
 
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
