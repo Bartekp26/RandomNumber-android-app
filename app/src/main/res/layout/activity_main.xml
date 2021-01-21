@@ -6,4 +6,46 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textViewAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/alegreya_sans_medium"
+        android:text="What would you like to generate ?"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    // Buttons to activities
+    <Button
+        android:id="@+id/buttonToRandomNumberActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingVertical="16dp"
+        android:text="@string/activity_random_number"
+        android:textSize="18sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAppName"
+        app:layout_constraintWidth_percent="0.80" />
+
+    <Button
+        android:id="@+id/buttonTo..."
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="16dp"
+        android:text="..."
+        android:textSize="18sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonToRandomNumberActivity"
+        app:layout_constraintStart_toStartOf="@+id/buttonToRandomNumberActivity"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToRandomNumberActivity"
+        app:layout_constraintWidth_percent="0.80" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
