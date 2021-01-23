@@ -1,6 +1,15 @@
 <resources>
+    // App information
     <string name="app_name">Random Stuff Generator</string>
+    <string name="app_description">Random Stuff Generator is android app to generating random things e.g. numbers, boolean. It was created by Bartosz Płaniak when he was 16 years old.</string>
+    <string name="app_versions">0.1</string>
+
+    // Author information
+    <string name="author_email">bartek.planiak@gmail.com</string>
+
+    // Activity labels
     <string name="activity_random_number">Random Number</string>
+    <string name="activity_about">About</string>
 
     // Errors
     <string name="error">Something went wrong</string>

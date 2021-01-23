@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomNumber">
-        <activity android:name=".RandomNumberActivity" android:label="@string/activity_random_number"></activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/activity_about"/>
+        <activity
+            android:name=".RandomNumberActivity"
+            android:label="@string/activity_random_number" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

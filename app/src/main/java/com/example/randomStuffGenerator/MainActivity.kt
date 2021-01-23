@@ -27,7 +27,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem) = when(item.itemId){
             R.id.menuAbout -> {
-                // TODO: add functionality to about item in menu
+                val intent = Intent(this, AboutActivity::class.java)
+                startActivity(intent)
                 true
             }
             R.id.menuExit -> {
