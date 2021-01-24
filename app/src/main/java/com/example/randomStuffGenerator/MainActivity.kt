@@ -17,6 +17,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RandomNumberActivity::class.java)
             startActivity(intent)
         }
+
+        buttonToRandomBooleanActivity.setOnClickListener{
+            val intent = Intent(this, RandomBooleanActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

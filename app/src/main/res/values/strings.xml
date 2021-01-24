@@ -9,6 +9,7 @@
 
     // Activity labels
     <string name="activity_random_number">Random Number</string>
+    <string name="activity_random_boolean">Boolean</string>
     <string name="activity_about">About</string>
 
     // Errors

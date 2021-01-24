@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomNumber">
         <activity
+            android:name=".RandomBooleanActivity"
+            android:label="@string/activity_random_boolean" />
+        <activity
             android:name=".AboutActivity"
-            android:label="@string/activity_about"/>
+            android:label="@string/activity_about" />
         <activity
             android:name=".RandomNumberActivity"
             android:label="@string/activity_random_number" />

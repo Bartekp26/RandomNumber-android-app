@@ -35,12 +35,12 @@
         app:layout_constraintWidth_percent="0.80" />
 
     <Button
-        android:id="@+id/buttonTo..."
+        android:id="@+id/buttonToRandomBooleanActivity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:paddingVertical="16dp"
-        android:text="..."
+        android:text="@string/activity_random_boolean"
         android:textSize="18sp"
         app:cornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="@+id/buttonToRandomNumberActivity"
