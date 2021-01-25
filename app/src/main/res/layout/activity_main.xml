@@ -48,4 +48,18 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonToRandomNumberActivity"
         app:layout_constraintWidth_percent="0.80" />
 
+    <Button
+        android:id="@+id/buttonToRandomYesNoActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="16dp"
+        android:text="@string/activity_random_yes_no"
+        android:textSize="18sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonToRandomBooleanActivity"
+        app:layout_constraintStart_toStartOf="@+id/buttonToRandomBooleanActivity"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToRandomBooleanActivity"
+        app:layout_constraintWidth_percent="0.80" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
