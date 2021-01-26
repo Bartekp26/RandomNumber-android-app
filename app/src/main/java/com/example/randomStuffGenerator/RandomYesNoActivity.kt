@@ -12,13 +12,18 @@ class RandomYesNoActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        btnGenerateYesNo.setOnClickListener {
-            val random = Random.nextBoolean()
+        val history: MutableList<String> = ArrayList()
 
-            generatedYesNo.text = when(random) {
+        btnGenerateYesNo.setOnClickListener {
+            val random = when(Random.nextBoolean()){
                 true -> "Yes"
                 false -> "No"
             }
+
+            generatedYesNo.text = random
+
+            history.add(random)
+            yesNoHistory.text = history.joinToString(separator = ",   ")
         }
     }
 

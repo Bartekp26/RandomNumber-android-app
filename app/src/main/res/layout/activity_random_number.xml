@@ -60,6 +60,13 @@
         app:layout_constraintStart_toStartOf="@+id/textViewMaxNumber"
         app:layout_constraintTop_toBottomOf="@+id/textViewMaxNumber" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="250dp" />
+
     // Button to generate number
     <Button
         android:id="@+id/btnGenerateNumber"
@@ -101,12 +108,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGenerateNumber" />
 
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
+    // Numbers history
+    <TextView
+        android:id="@+id/numberHistory"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="250dp" />
+        android:layout_marginTop="40dp"
+        android:lineSpacingExtra="5sp"
+        android:text=""
+        android:textSize="18sp"
+        android:justificationMode="inter_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generatedNumber"
+        app:layout_constraintWidth_percent="0.90" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

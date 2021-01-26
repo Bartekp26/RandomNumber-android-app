@@ -33,4 +33,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGenerateBoolean"/>
 
+    // Numbers history
+    <TextView
+        android:id="@+id/booleanHistory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:lineSpacingExtra="5sp"
+        android:text=""
+        android:textSize="18sp"
+        android:justificationMode="inter_word"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generatedBoolean"
+        app:layout_constraintWidth_percent="0.90" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,8 +12,14 @@ class RandomBooleanActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        val history: MutableList<String> = ArrayList()
+
         btnGenerateBoolean.setOnClickListener{
-            generatedBoolean.text = Random.nextBoolean().toString()
+            val random = Random.nextBoolean().toString()
+            generatedBoolean.text = random
+
+            history.add(random)
+            booleanHistory.text = history.joinToString(separator = ",   ")
         }
     }
 

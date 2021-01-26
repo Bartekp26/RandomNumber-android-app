@@ -12,6 +12,8 @@ class RandomNumberActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        val history: MutableList<String> = ArrayList()
+
         // Generate Number
         btnGenerateNumber.setOnClickListener {
             error.text = ""
@@ -53,10 +55,12 @@ class RandomNumberActivity : AppCompatActivity() {
                     return@setOnClickListener
                 }
                 else -> {
-                    val random = Random.nextInt(minNumber, maxNumber)
-                    generatedNumber.text = random.toString()
+                    val random = Random.nextInt(minNumber, maxNumber).toString()
+                    generatedNumber.text = random
+                    history.add(random)
                 }
             }
+            numberHistory.text = history.joinToString(separator = ",   ")
         }
     }
 
