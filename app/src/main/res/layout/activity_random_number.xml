@@ -63,17 +63,19 @@
     // Button to generate number
     <Button
         android:id="@+id/btnGenerateNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:fontFamily="@font/alegreya_sans_medium"
         android:text="Generate Number"
         android:textSize="24sp"
         app:cornerRadius="25dp"
         android:paddingHorizontal="36dp"
-        android:paddingVertical="10dp"
+        android:paddingVertical="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.80" />
 
     // Text view with generated number
     <TextView
