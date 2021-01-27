@@ -19,29 +19,21 @@ class RandomNumberActivity : AppCompatActivity() {
             error.text = ""
 
             val minNumber = when {
-                minNumberToGenerate.text.toString() == "" -> {
-                    Int.MIN_VALUE
-                }
+                minNumberToGenerate.text.toString() == "" -> Int.MIN_VALUE
                 minNumberToGenerate.text.toString().toIntOrNull() == null -> {
                     error.text = getString(R.string.errorNumberIsTooSmallOrLarge)
                     return@setOnClickListener
                 }
-                else -> {
-                    minNumberToGenerate.text.toString().toInt()
-                }
+                else -> minNumberToGenerate.text.toString().toInt()
             }
 
             val maxNumber = when {
-                maxNumberToGenerate.text.toString() == "" -> {
-                    Int.MAX_VALUE
-                }
+                maxNumberToGenerate.text.toString() == "" -> Int.MAX_VALUE
                 maxNumberToGenerate.text.toString().toIntOrNull() == null -> {
                     error.text = getString(R.string.errorNumberIsTooSmallOrLarge)
                     return@setOnClickListener
                 }
-                else -> {
-                    maxNumberToGenerate.text.toString().toInt()
-                }
+                else -> maxNumberToGenerate.text.toString().toInt()
             }
 
             // Error checker
