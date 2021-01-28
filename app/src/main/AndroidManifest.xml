@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomNumber">
+        <activity android:name=".RandomLetterActivity"></activity>
         <activity
             android:name=".RandomYesNoActivity"
-            android:label="@string/activity_random_yes_no"/>
+            android:label="@string/activity_random_yes_no" />
         <activity
             android:name=".RandomBooleanActivity"
             android:label="@string/activity_random_boolean" />
