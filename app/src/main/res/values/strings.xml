@@ -8,9 +8,10 @@
     <string name="author_email">bartek.planiak@gmail.com</string>
 
     // Activity labels
-    <string name="activity_random_number">Random Number</string>
+    <string name="activity_random_number">Number</string>
     <string name="activity_random_boolean">True or False</string>
     <string name="activity_random_yes_no">Yes or No</string>
+    <string name="activity_random_letter">Letter</string>
     <string name="activity_about">About</string>
 
     // Errors

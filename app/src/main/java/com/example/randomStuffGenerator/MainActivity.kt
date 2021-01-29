@@ -27,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RandomYesNoActivity::class.java)
             startActivity(intent)
         }
+
+        buttonToRandomLetterActivity.setOnClickListener {
+            val intent = Intent(this, RandomLetterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
