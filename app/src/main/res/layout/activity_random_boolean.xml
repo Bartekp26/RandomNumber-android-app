@@ -37,15 +37,19 @@
     <TextView
         android:id="@+id/booleanHistory"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
         android:lineSpacingExtra="5sp"
         android:text=""
         android:textSize="18sp"
+        android:typeface="monospace"
+        android:scrollbars="vertical"
         android:justificationMode="inter_word"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generatedBoolean"
-        app:layout_constraintWidth_percent="0.90" />
+        app:layout_constraintWidth_percent="0.90"
+        app:layout_constraintHeight_percent="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

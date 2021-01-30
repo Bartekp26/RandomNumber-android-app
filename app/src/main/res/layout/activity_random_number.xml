@@ -10,7 +10,7 @@
         android:id="@+id/textViewRangeOfNumbers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:text="Select range of numbers:"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="250dp" />
+        app:layout_constraintGuide_begin="230dp" />
 
     // Button to generate number
     <Button
@@ -114,15 +114,19 @@
     <TextView
         android:id="@+id/numberHistory"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="40dp"
+        android:paddingHorizontal="10dp"
         android:lineSpacingExtra="5sp"
         android:text=""
         android:textSize="18sp"
+        android:typeface="monospace"
+        android:scrollbars="vertical"
         android:justificationMode="inter_word"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generatedNumber"
-        app:layout_constraintWidth_percent="0.90" />
+        app:layout_constraintWidth_percent="0.90"
+        app:layout_constraintHeight_percent="0.15" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

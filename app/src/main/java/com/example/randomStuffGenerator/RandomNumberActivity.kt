@@ -2,6 +2,7 @@ package com.example.randomStuffGenerator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import kotlinx.android.synthetic.main.activity_random_number.*
 import kotlin.random.Random
 
@@ -13,6 +14,7 @@ class RandomNumberActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         val history: MutableList<String> = ArrayList()
+        numberHistory.movementMethod = ScrollingMovementMethod()
 
         // Generate Number
         btnGenerateNumber.setOnClickListener {
@@ -52,7 +54,7 @@ class RandomNumberActivity : AppCompatActivity() {
                     history.add(random)
                 }
             }
-            numberHistory.text = history.joinToString(separator = ",   ")
+            numberHistory.text = history.joinToString(separator = "    ")
         }
     }
 
