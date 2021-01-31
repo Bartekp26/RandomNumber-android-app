@@ -12,6 +12,7 @@
     <string name="activity_random_boolean">True or False</string>
     <string name="activity_random_yes_no">Yes or No</string>
     <string name="activity_random_letter">Letter</string>
+    <string name="activity_random_password">Password</string>
     <string name="activity_about">About</string>
 
     // Errors

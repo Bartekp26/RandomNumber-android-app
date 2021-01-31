@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomNumber">
         <activity
+            android:name=".RandomPasswordActivity"
+            android:label="@string/activity_random_password" />
+        <activity
             android:name=".RandomLetterActivity"
-            android:label="@string/activity_random_letter"/>
+            android:label="@string/activity_random_letter" />
         <activity
             android:name=".RandomYesNoActivity"
             android:label="@string/activity_random_yes_no" />

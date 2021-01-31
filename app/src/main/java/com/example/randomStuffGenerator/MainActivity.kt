@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RandomLetterActivity::class.java)
             startActivity(intent)
         }
+
+        buttonToRandomPasswordActivity.setOnClickListener {
+            val intent = Intent(this, RandomPasswordActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
