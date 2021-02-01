@@ -20,4 +20,8 @@
     <string name="errorNumberIsTooSmallOrLarge">Numbers must be between -2,147,483,648 and 2,147,483,647</string>
     <string name="errorMinNumberGreaterThanMaxNumber">Minimum number can\'t be greater than maximum number</string>
     <string name="errorMinNumberEqualToMaxNumber">Minimum number can\'t be equal to maximum number</string>
+
+    <string name="errorNoLengthOfPassword">You must enter password length</string>
+    <string name="errorLengthOfPasswordIsNegative">Password length can\'t be negative</string>
+    <string name="errorLengthOfPasswordTooSmallOrLarge">Password length must be between 2 and 100 characters</string>
 </resources>
