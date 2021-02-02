@@ -1,8 +1,8 @@
 package com.example.randomStuffGenerator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_random_letter.*
 import kotlin.random.Random
 
@@ -20,7 +20,7 @@ class RandomLetterActivity : AppCompatActivity() {
 
         btnGenerateLetter.setOnClickListener {
             val randomChar = (1..1)
-                    .map{Random.nextInt(0, lettersArray.size) }
+                    .map { Random.nextInt(0, lettersArray.size) }
                     .map(lettersArray::get)
                     .joinToString("")
 

@@ -1,8 +1,8 @@
 package com.example.randomStuffGenerator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_random_yes_no.*
 import kotlin.random.Random
 
@@ -17,7 +17,7 @@ class RandomYesNoActivity : AppCompatActivity() {
         yesNoHistory.movementMethod = ScrollingMovementMethod()
 
         btnGenerateYesNo.setOnClickListener {
-            val random = when(Random.nextBoolean()){
+            val random = when (Random.nextBoolean()) {
                 true -> "Yes"
                 false -> "No"
             }

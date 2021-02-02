@@ -1,10 +1,10 @@
 package com.example.randomStuffGenerator
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.system.exitProcess
 
@@ -13,12 +13,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        buttonToRandomNumberActivity.setOnClickListener{
+        buttonToRandomNumberActivity.setOnClickListener {
             val intent = Intent(this, RandomNumberActivity::class.java)
             startActivity(intent)
         }
 
-        buttonToRandomBooleanActivity.setOnClickListener{
+        buttonToRandomBooleanActivity.setOnClickListener {
             val intent = Intent(this, RandomBooleanActivity::class.java)
             startActivity(intent)
         }
@@ -45,18 +45,18 @@ class MainActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem) = when(item.itemId){
-            R.id.menuAbout -> {
-                val intent = Intent(this, AboutActivity::class.java)
-                startActivity(intent)
-                true
-            }
-            R.id.menuExit -> {
-                moveTaskToBack(true)
-                exitProcess(-1)
-            }
-            else -> {
-                super.onOptionsItemSelected(item)
-            }
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.menuAbout -> {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+            true
         }
+        R.id.menuExit -> {
+            moveTaskToBack(true)
+            exitProcess(-1)
+        }
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+    }
 }

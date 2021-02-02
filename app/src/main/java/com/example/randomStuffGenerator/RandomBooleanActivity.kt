@@ -1,8 +1,8 @@
 package com.example.randomStuffGenerator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_random_boolean.*
 import kotlin.random.Random
 
@@ -16,7 +16,7 @@ class RandomBooleanActivity : AppCompatActivity() {
         val history: MutableList<String> = ArrayList()
         booleanHistory.movementMethod = ScrollingMovementMethod()
 
-        btnGenerateBoolean.setOnClickListener{
+        btnGenerateBoolean.setOnClickListener {
             val random = Random.nextBoolean().toString()
             generatedBoolean.text = random
 

@@ -1,8 +1,8 @@
 package com.example.randomStuffGenerator
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_random_password.*
 import kotlin.random.Random
 
@@ -19,7 +19,7 @@ class RandomPasswordActivity : AppCompatActivity() {
         btnGeneratePassword.setOnClickListener {
             error.text = ""
 
-            val lengthOfPassword = when{
+            val lengthOfPassword = when {
                 lengthOfPassword.text.toString() == "" -> {
                     error.text = resources.getString(R.string.errorNoLengthOfPassword)
                     return@setOnClickListener
@@ -36,9 +36,9 @@ class RandomPasswordActivity : AppCompatActivity() {
             }
 
             val random = (1..lengthOfPassword)
-                .map{ Random.nextInt(0, lettersArray.size) }
-                .map(lettersArray::get)
-                .joinToString("")
+                    .map { Random.nextInt(0, lettersArray.size) }
+                    .map(lettersArray::get)
+                    .joinToString("")
 
             generatedPassword.text = random
         }
