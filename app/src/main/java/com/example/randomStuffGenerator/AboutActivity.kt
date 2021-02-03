@@ -22,9 +22,8 @@ class AboutActivity : AppCompatActivity() {
                 .addItem(versionElement)
                 .addGroup("Connect with us")
                 .addEmail(resources.getString(R.string.author_email))
-                .addFacebook("")
                 .addPlayStore("")
-                .addGitHub("")
+                .addGitHub("Bartekp26")
                 .create()
 
         setContentView(aboutPage)

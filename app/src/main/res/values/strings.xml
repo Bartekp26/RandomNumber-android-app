@@ -20,8 +20,24 @@
     <string name="errorNumberIsTooSmallOrLarge">Numbers must be between -2,147,483,648 and 2,147,483,647</string>
     <string name="errorMinNumberGreaterThanMaxNumber">Minimum number can\'t be greater than maximum number</string>
     <string name="errorMinNumberEqualToMaxNumber">Minimum number can\'t be equal to maximum number</string>
-
     <string name="errorNoLengthOfPassword">You must enter password length</string>
     <string name="errorLengthOfPasswordIsNegative">Password length can\'t be negative</string>
     <string name="errorLengthOfPasswordTooSmallOrLarge">Password length must be between 2 and 100 characters</string>
+
+    <string name="what_to_generate">What would you like to generate ?</string>
+    <string name="select_range_of_numbers">Select range of numbers:</string>
+    <string name="how_many_letters">How many letters should your password have ?</string>
+
+    <string name="generate_number">Generate Number</string>
+    <string name="generate_boolean">Generate Boolean</string>
+    <string name="generate_yes_or_no">Generate Yes or No</string>
+    <string name="generate_letter">Generate Letter</string>
+    <string name="generate_password">Generate Password</string>
+
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+
+    <string name="default_min_number">0</string>
+    <string name="default_max_number">100</string>
+    <string name="default_password_length">10</string>
 </resources>
