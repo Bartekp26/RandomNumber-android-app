@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Generator Losowych Rzeczy</string>
+    <string name="app_description">Generator Losowych Rzeczy jest aplikacją na androida generującą przypadkowe rzeczy tj. liczby, prawda - fałsz. Została stworzona przez Bartosza Płaniaka, gdy miał 16 lat.</string>
+    <string name="app_versions">0.1</string>
+
+    // Author information
+    <string name="author_email">bartek.planiak@gmail.com</string>
+
+    // Activity labels
+    <string name="activity_random_number">Liczba</string>
+    <string name="activity_random_boolean">Prawda lub Fałsz</string>
+    <string name="activity_random_yes_no">Tak lub Nie</string>
+    <string name="activity_random_letter">Litera</string>
+    <string name="activity_random_password">Hasło</string>
+    <string name="activity_about">O aplikacji</string>
+
+    // Errors
+    <string name="error">Something went wrong</string>
+    <string name="errorNumberIsTooSmallOrLarge">Liczby muszą być pomiędzy -2,147,483,648 i 2,147,483,647</string>
+    <string name="errorMinNumberGreaterThanMaxNumber">Minimalna liczba nie może być większa od maksymalnej</string>
+    <string name="errorMinNumberEqualToMaxNumber">Minimalna liczba nie może być równa maksymalnej</string>
+    <string name="errorNoLengthOfPassword">Musisz podać długość hasła</string>
+    <string name="errorLengthOfPasswordIsNegative">Długość hasła nie może być ujemna</string>
+    <string name="errorLengthOfPasswordTooSmallOrLarge">Hasło musi mieć od 2 do 100 znaków</string>
+
+    <string name="what_to_generate">Co chciałbyś wygenerować ?</string>
+    <string name="select_range_of_numbers">Wybierz zakres liczb:</string>
+    <string name="how_many_letters">Ile znaków ma mieć twoje hasło ?</string>
+
+    <string name="generate_number">Generuj Liczbę</string>
+    <string name="generate_boolean">Wygeneruj Prawda - Fałsz</string>
+    <string name="generate_yes_or_no">Wygeneruj Tak - Nie</string>
+    <string name="generate_letter">Wygeneruj Literę</string>
+    <string name="generate_password">Wygeneruj Hasło</string>
+
+    <string name="from">Od:</string>
+    <string name="to">Do:</string>
+
+    <string name="default_min_number">0</string>
+    <string name="default_max_number">100</string>
+    <string name="default_password_length">10</string>
+</resources>
